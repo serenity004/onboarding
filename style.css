@@ -1,0 +1,131 @@
+@keyframes gradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+.gradient-bg {
+    background: linear-gradient(120deg, #ee7752 0%, #e73c7e 50%, #23a6d5 100%);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+.auth-card {
+    backdrop-filter: blur(16px);
+    background: rgba(255,255,255,0.10);
+    box-shadow: 0 12px 40px 0 rgba(31,38,135,0.18);
+    border-radius: 2rem;
+    border: 1px solid rgba(255,255,255,0.15);
+    padding: 3rem 2.5rem;
+    transition: box-shadow 0.3s;
+}
+
+.input-field {
+    background: rgba(255,255,255,0.22);
+    border: 1px solid rgba(255,255,255,0.32);
+    color: #222;
+    font-size: 1.08rem;
+    padding: 1rem 1.25rem;
+    border-radius: 1.2rem;
+    transition: border-color 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.input-field::placeholder {
+    color: #6b7280;
+    opacity: 0.8;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #818cf8;
+    box-shadow: 0 0 0 3px rgba(99,102,241,0.18);
+    background: rgba(255,255,255,0.32);
+}
+
+.form-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 2rem;
+    text-align: center;
+    letter-spacing: -1px;
+    text-shadow: 0 2px 8px rgba(99,102,241,0.08);
+}
+
+.form-label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 0.25rem;
+}
+
+.form-icon {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6366f1;
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.form-btn {
+    width: 100%;
+    padding: 0.75rem 0;
+    margin-top: 0.5rem;
+    font-weight: 700;
+    border-radius: 1.2rem;
+    box-shadow: 0 2px 12px 0 rgba(99,102,241,0.12);
+    background: linear-gradient(90deg, #6366f1 0%, #a78bfa 100%);
+    color: #fff;
+    border: none;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.form-btn:hover {
+    background: linear-gradient(90deg, #4f46e5 0%, #8b5cf6 100%);
+    box-shadow: 0 4px 16px 0 rgba(99,102,241,0.18);
+    transform: scale(1.03);
+}
+
+.form-btn:active {
+    transform: scale(0.98);
+}
+
+.form-link {
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    opacity: 0.95;
+}
+
+.toggle-form {
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s;
+    cursor: pointer;
+    color: #f472b6;
+    font-weight: 600;
+}
+
+.toggle-form:hover {
+    color: #818cf8;
+}
+
+.toggle-form::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #818cf8;
+    transition: width 0.3s ease;
+}
+
+.toggle-form:hover::after {
+    width: 100%;
+
+}}
+
